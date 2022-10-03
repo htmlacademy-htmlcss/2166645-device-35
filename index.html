@@ -7,41 +7,55 @@
   <body>
 <header class="page-header">
   <img class="page-header-logo" alt="Логотип интернет-магазина "Девайс"." src="">
-  <nav class="navigation">
-    <ul class="navigation-list navigation-user">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
+  <nav class="main-navigation">
+    <ul class="main-navigation-list-user main-navigation-list-user-search-basket">
+      <li class="main-navigation-user-item">
+        <a class="main-navigation-user-link" href="#">
           <span class="visually-hidden">
             Поиск
           </span>
         </a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
+      <li class="main-navigation-user-item">
+        <a class="main-navigation-user-link" href="#">
           Войти
           </a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Сравнить</a>
+      </ul>
+      <ul class="main-navigation-list-user main-navigation-list-user-compare-order">
+      <li class="main-navigation-user-item">
+        <a class="main-navigation-user-link" href="#">Сравнить</a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Корзина</a>
+      <li class="main-navigation-user-item">
+        <span>2</span>
+        <a class="main-navigation-user-link" href="#">Корзина</a>
       </li>
     </ul>
-    <ul lass="navigation-list" >
-      <li class="navigation-item">
-        <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+    <ul lass="main-navigation-list" >
+      <li class="main-navigation-item">
+        <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
+        <!--Доделать кнопку, какой там список нужно делать и сделать класс-->
+        <button type="button">
+        <fieldset class="">
+              <a href="#">Виртуальная реальность</a>
+              <a href="#">Моноподы для селфи</a>
+              <a href="#">Экшн-камеры</a>
+              <a href="#">Фитнес-браслеты</a>
+              <a href="#">Умные часы</a>
+              <a href="#">Квадрокоптеры</a>
+          </fieldset>
+        </button>
       </li>
     </ul>
     <ul class="navigation-list">
       <li class="navigation-item">
-        <a class="navigation-link" href="delivery.html">Доставка</a>
+        <a class="navigation-link" href="#">Доставка</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="garanty.html">Гарантия</a>
+        <a class="navigation-link" href="#">Гарантия</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="about.html">Контакты</a>
+        <a class="navigation-link" href="#">Контакты</a>
       </li>
     </ul>
   </nav>
@@ -49,7 +63,59 @@
 </header>
 <main class="main-page">
 </main>
+
 <footer class="page-footer">
+
+  <section class="footer-adress">
+    <h2 class="visually-hidden">Адрес</h2>
+        <img class="footer-adress-logo" src="" alt="Логотип интернет-магазина "Девайс".">
+        <address class="contacts-address">
+          <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </address>
+        <!--картинка плоского прямоугольника-->
+        <img src="" alt="">
+    </section>
+
+    <section class="footer-advantages-contacts">
+      <h2 class="visually-hidden">Преимущества и контакты</h2>
+
+      <ul class="footer-advantages-contacts-list">
+        <li class="footer-advantages-contacts-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="footer-advantages-contacts-item">
+          <a href="#">Гарантия</a>
+        </li>
+        <li class="footer-advantages-contacts-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">Ютуб</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="footer-phone-website">
+      <h2 class="visually-hidden">Телефон и интернет-адрес</h2>
+      <address class="contacts-address">
+        <a class="footer-phone" href="tel:+78128121212">Тел.: +7(812) 812-12-12</a>
+      </address>
+      <p class="footer-website"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+    </section>
 </footer>
   </body>
 </html>
