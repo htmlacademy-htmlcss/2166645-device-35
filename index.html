@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
   <header class="page-header">
-    <img class="page-header-logo" src="#" alt="Логотип интернет-магазина "Девайс".">
+    <img class="page-header-logo" src="./images/header/logo_header.svg" width="145" height="36" alt="Логотип интернет-магазина "Девайс".">
 
    <nav class="main-navigation">
 
@@ -70,14 +71,10 @@
 
   <main class="main-index">
 
-    <img class="header-picture-first" src="#" alt="Цифра 01">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
 
       <section class="base-gallery">
-
           <h2 class="visually-hidden">Популярные товары</h2>
-
-          <img class="slider-card" src="#" alt="Бестселлеры" >
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущий товар</span>
           </button>
@@ -86,9 +83,13 @@
           </button>
 
          <ol class="slider-pagination">
+
             <li class="slider-pagination-item">
+              <p class="slide-number">01</p>
+              <img class="slider-card" src="./images/quadrocopter.jpg" width="560" height="560" alt="Квадрокоптер" >
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 фото</span>
+
+              </button>
                 <b class="slider-title">Порхает как бабочка, жалит как пчела!</b>
                 <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                 <a class="slider-link" href="#">Подробнее</a>
@@ -98,35 +99,40 @@
                   <dt class="slider-term">50 м</dt>
                  <dd class="slider-definition">Радиус поражения</dd>
                </dl>
-             </button>
             </li>
+
             <li class="slider-pagination-item">
+              <p class="slide-number">02</p>
+              <img class="slider-card" src="./images/fitness_braclete.jpg" width="560" height="560" alt="Фитнес-браслет" >
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">2 фото</span>
-                <b class="slider-title">Сделет селфи в любой ситуации</b>
-                <p class="slider-description">Эта телескопическая селфи-палка регулирует угол наклона и расстояние до объекта</p>
+
+              </button>
+                <b class="slider-title">Худеем правильно!</b>
+                <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a class="slider-link" href="#">Подробнее</a>
                 <dl class="slider-list">
-                  <dt class="slider-term">180 градусов</dt>
-                  <dd class="slider-definition">угол наклона</dd>
-                  <dt class="slider-term">2 мм</dt>
-                  <dd class="slider-definition">длина телескопической трубки</dd>
-               </dl>
-             </button>
+                  <dt class="slider-term">48 часов</dt>
+                  <dd class="slider-definition">Без подзарядки</dd>
+                </dl>
             </li>
+
             <li class="slider-pagination-item">
+             <p class="slide-number">03</p>
+             <img class="slider-card" src="./images/long_selfiе_stick.jpg" width="560" height="560" alt="Длинная селфи-палка">
              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-               <span class="visually-hidden">3 фото</span>
-               <b class="slider-title">Мир в реальности</b>
-               <p class="slider-description">Эти виртуальные очки подарят тебе незабываемые впечатления</p>
+
+             </button>
+               <b class="slider-title">Делай селфи как Бен Стиллер!</b>
+               <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
                <a class="slider-link" href="#">Подробнее</a>
                <dl class="slider-list">
-                  <dt class="slider-term">5D</dt>
-                  <dd class="slider-definition">изображение, звук и ощущения</dd>
-                  <dt class="slider-term">24 часа</dt>
-                  <dd class="slider-definition">работа без подзарядки</dd>
+                  <dt class="slider-term">8,5 м</dt>
+                  <dd class="slider-definition">Длина палки</dd>
+                  <dt class="slider-term">5 кг</dt>
+                  <dd class="slider-definition">Вес палки</dd>
+                  <dt class="slider-term">Карбон</dt>
+                  <dd class="slider-definition">Материал</dd>
                </dl>
-             </button>
             </li>
          </ol>
 
@@ -138,27 +144,27 @@
 
          <ul class="groups-list">
             <li class="groups-item">
-            <img class="groups-picture" src="#" alt="Очки виртуальной реальности">
+            <img class="groups-picture" src="./images/virtual_glasses.svg" width="96.95" height="54.99" alt="Очки виртуальной реальности">
             <a class="groups-name" href="#">Виртуальная реальность</a>
             </li>
             <li class="groups-item">
-             <img class="groups-picture" src="#" alt="Телефон на селфи-палке">
+             <img class="groups-picture" src="./images/monopod_selfi.svg" width="85.87" height="117" alt="Телефон на селфи-палке">
              <a class="groups-name" href="#">Моноподы для селфи</a>
            </li>
             <li class="groups-item">
-             <img class="groups-picture" src="#" alt="Камера">
+             <img class="groups-picture" src="./images/action_camera.svg" width="71.02" height="87" alt="Камера">
              <a class="groups-name" href="#">Экшн-камеры</a>
             </li>
             <li class="groups-item">
-             <img class="groups-picture" src="#" alt="Фитнес-браслет">
+             <img class="groups-picture" src="./images/fitness_bracelet.svg" width="107.31" height="64.99" alt="Фитнес-браслет">
              <a class="groups-name" href="#">Фитнес-браслеты</a>
             </li>
            <li class="groups-item">
-             <img class="groups-picture" src="#" alt="Наручные часы">
+             <img class="groups-picture" src="./images/smart_clocks.svg" width="56.01" height="97.98" alt="Наручные часы">
              <a class="groups-name" href="#">Умные часы</a>
            </li>
            <li class="groups-item">
-            <img class="groups-picture" src="#" alt="Квадрокоптер">
+            <img class="groups-picture" src="./images/kvadrocopter.svg" width="132.03" height="69.01" alt="Квадрокоптер">
             <a class="groups-name" href="#">Квадрокоптеры</a>
            </li>
           </ul>
@@ -242,7 +248,7 @@
 
   <section class="footer-adress">
     <h2 class="visually-hidden">Адрес</h2>
-        <img class="footer-adress-logo" src="" alt="Логотип интернет-магазина "Девайс".">
+        <img class="footer-adress-logo" src="./images/footer/logo_footer.svg" width="145" height="36" alt="Логотип интернет-магазина "Девайс".">
         <address class="contacts-address">
           <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
@@ -287,7 +293,7 @@
       <address class="contacts-address">
         <a class="footer-phone" href="tel:+78128121212">Тел.: +7(812) 812-12-12</a>
       </address>
-      <p class="footer-website"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+      <p class="footer-website"><a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="./images/footer/htmlacademy.svg" weight="114.9" height="32.9" alt="ссылка на сайт htmlacademy"></a></p>
     </section>
 </footer>
   </body>
