@@ -16,7 +16,7 @@
       <h2 class="visually-hidden">Поиск</h2>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="search"></label>
-        <input class="field" placeholder="Поиск по сайту" type="text" name="search" id="search">
+        <input placeholder="Поиск по сайту" class="search"  type="text" name="search" id="search">
         <button class="button search-button" type="button">
           <span class="search-button">Найти</span>
         </button>
@@ -30,14 +30,14 @@
       </div>
 
       <ul class="main-navigation-list-user">
-      <li class="main-navigation-user-item">
-        <a class="main-navigation-user-link" href="#">Сравнить</a>
-      </li>
-      <li class="main-navigation-user-item">
-        <span class="basket-set">2</span>
-        <a class="main-navigation-user-link" href="#">Корзина</a>
-      </li>
-    </ul>
+        <li class="main-navigation-user-item">
+          <a class="main-navigation-user-link" href="#">Сравнить</a>
+        </li>
+        <li class="main-navigation-user-item">
+          <span class="basket-set">2</span>
+          <a class="main-navigation-user-link" href="#">Корзина</a>
+        </li>
+      </ul>
     <ul lass="main-navigation-list" >
       <li class="main-navigation-item">
         <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
@@ -85,8 +85,10 @@
          <ol class="slider-pagination">
 
             <li class="slider-pagination-item">
-              <p class="slide-number">01</p>
-              <img class="slider-card" src="./images/quadrocopter.jpg" width="560" height="560" alt="Квадрокоптер" >
+              <div class="slider-number-container">
+                 <span class="slide-number">01</span>
+              </div>
+              <img class="slider-card" src="./images/quadrocopter.png" width="560" height="560" alt="Квадрокоптер" >
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
 
               </button>
@@ -102,8 +104,10 @@
             </li>
 
             <li class="slider-pagination-item">
-              <p class="slide-number">02</p>
-              <img class="slider-card" src="./images/fitness_braclete.jpg" width="560" height="560" alt="Фитнес-браслет" >
+              <div class="slider-number-container">
+                <span class="slide-number">02</span>
+              </div>
+              <img class="slider-card" src="./images/fitness_braclete.png" width="560" height="560" alt="Фитнес-браслет" >
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
 
               </button>
@@ -117,8 +121,10 @@
             </li>
 
             <li class="slider-pagination-item">
-             <p class="slide-number">03</p>
-             <img class="slider-card" src="./images/long_selfiе_stick.jpg" width="560" height="560" alt="Длинная селфи-палка">
+              <div class="slider-number-container">
+                <span class="slide-number">03</span>
+             </div>
+             <img class="slider-card" src="./images/long_selfiе_stick.png" width="560" height="560" alt="Длинная селфи-палка">
              <button class="slider-pagination-button slider-pagination-button-current" type="button">
 
              </button>
@@ -174,7 +180,7 @@
       <section class="suggestion-delivery">
          <h2 class="visually-hidden">Предложения</h2>
          <ul class="suggestion-list">
-             <li class="suggestion-item">Доставка</li>
+             <li class="suggestion-item suggestion-item-checked">Доставка</li>
              <li class="suggestion-item">Гарантия</li>
              <li class="suggestion-item">Кредит</li>
          </ul>
@@ -189,7 +195,7 @@
 
   <div class="order">
       <img class="moving-truck" src="#" alt="Движущийся грузовик">
-      <p class="order-info"> Доставим редки товар под заказ</p>
+      <p class="order-info"> Доставим редкий товар под заказ</p>
       <button class="order-button" type="button">i</button>
 
   </div>
@@ -233,7 +239,7 @@
     <p class="newsletter-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
       <label for="newsletter-email"></label>
-      <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+      <input placeholder="Ваш e-mail" class="field-mail" type="email" name="newsletter-email" id="newsletter-email" required>
       <button class="button newsletter-button" type="submit">
         <span class="subscribe">Подписаться</span>
       </button>
@@ -266,7 +272,7 @@
           <a class="footer-advantages-contacts-link" href="#">Гарантия</a>
         </li>
         <li class="footer-advantages-contacts-item">
-          <a clas="footer-advantages-contacts-link" href="#">Контакты</a>
+          <a class="footer-advantages-contacts-link" href="#">Контакты</a>
         </li>
       </ul>
 
