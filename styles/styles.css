@@ -54,7 +54,6 @@ body {
 .navigation-link,
 .main-navigation-user-text {
   color: #000000;
-  text-align: center; /*надо ли эту строку и зачем?*/
   text-decoration: none;
 }
 
@@ -75,9 +74,13 @@ body {
 .basket-set {
   font-size: 14px;
   line-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
   background-color: #ffffff;
-  background-size: 34px 34px; /*не устанавливается размер фона как круг, не знаю почему*/
-  border-radius: 40%;
 }
 
 .groups-products-item {
@@ -161,14 +164,14 @@ body {
   line-height: 76px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  width: 160px;
   background-color:#ffe17f;
-  background-size: 160px 8px; /*li - строчный элемент, поэтому растягивается. Как исправить?*/
-}
+  }
 
 .suggestion-item-checked {
   color: #ffe17f;
+  width: 280px;
   background-color: #000000;
-  background-size: 280px 40px;
 }
 
 .delivery {
@@ -182,7 +185,7 @@ body {
   color:#444444;
 }
 
-/* блоки доставке редкого заказа*/
+/* блоки доставки редкого заказа*/
 .order {
   background-color: #F0F0F0;
   background-size: 1160px 100px;
@@ -198,7 +201,7 @@ body {
   text-transform: uppercase;
 }
 .moving-truck {
-  background-color: #FFE17F;;
+  background-color: #FFE17F;
   background-size: 125px 100px;
 }
 
@@ -218,8 +221,7 @@ body {
 .contacts-schedule-item {
   font-style: normal;
   color:#444444;
-  /*нужно убрать наклон*/
-}
+ }
 
 .about-us-item {
   font-weight: 700;
