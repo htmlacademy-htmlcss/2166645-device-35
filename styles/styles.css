@@ -214,6 +214,7 @@ body {
   display: flex;
   width: 1160px;
   margin: 0 auto;
+  margin-top: -150px;
   padding: 0;
   justify-content: space-between;
   outline-style: solid;
@@ -224,7 +225,7 @@ body {
   display: flex;
   width: 560px;
   height: 560px;
-  margin-top: -150px;
+  /*margin-top: -150px;*/
   margin-right: 40px;
   outline-style: solid;
   outline-color: #f70d0df4;
@@ -236,18 +237,19 @@ body {
   height: 60px;
 }
 
-/*.slider-number-container {
- display: flex;
-  align-items: center;
- width: 250px;
+.slider-number-container {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  /*width: 250px;
   height: 135px;
-  margin: 0 auto;
- margin-right: 49px;
+  margin: 0 auto;*/
+  padding-right: 49px;
   outline-style: solid;
   outline-color: #0000ff;
-}*/
+}
 
-.slider-number {
+ .slider-number {
   display: block;
   text-align: right;
   width: 250px;
@@ -267,8 +269,7 @@ body {
 .slider-info-container {
   display: flex;
   flex-direction: column;
-  /*margin-top: -45px;*/
-  margin-top: -90px;
+  margin-top: 60px;
   width: 560px;
   min-height: 401px;
   outline-style: solid;
@@ -303,7 +304,7 @@ body {
   text-decoration: none;
   text-align: center;
   background-color: #ffe17f;
-  background-size: 220px 8px;
+  /*background-size: 220px 8px;*/
   /*размер не устанавливается*/
   outline-style: solid;
   outline-color: #00eafff4;
@@ -925,9 +926,9 @@ body {
 }
 
 .product-list {
-list-style-type: none;
-margin: 0;
-padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination {
@@ -1049,6 +1050,7 @@ padding: 0;
   outline-style: solid;
   outline-color: #00ff00df;
 }
+
 .pagination-current {
   color: rgba(68, 68, 68, 0.6);
 }
