@@ -9,71 +9,71 @@
 
   <body>
     <header class="page-header">
-      <div class="header-container">
-        <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
+      <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
+      <nav class="main-navigation">
         <img class="page-header-logo" src="./images/header/logo_header.svg" width="145" height="36"
           alt="Логотип интернет-магазина 'Девайс'.">
-        <!--<div class="main-navigation-user">
-          <a class="main-navigation-user-link main-navigation-user-in" href="#">
-            Войти
-          </a>
-          </div>-->
-        <nav class="main-navigation">
-          <div class="search-entrance-container">
-            <section class="search-section">
-              <h2 class="visually-hidden">Поиск</h2>
-              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="search"></label>
-                <input placeholder="Поиск по сайту" class="search" type="text" name="search" id="search">
-                <button class="button search-button" type="button">
-                  <span class="search-button">Найти</span>
-                </button>
-              </form>
-            </section>
-            <a class="main-navigation-user-link main-navigation-user-in" href="#">
-              Войти
-            </a>
-          </div>
+        <section class="search-section">
+          <h2 class="visually-hidden">Поиск</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="search"></label>
+            <input placeholder="Поиск по сайту" class="search" type="text" name="search" id="search">
+            <button class="button search-button" type="button">
+              <span class="search-button">Найти</span>
+            </button>
+          </form>
+        </section>
+        <div class="navigation-user-container">
           <ul class="main-navigation-list-user">
             <li class="main-navigation-user-item">
-              <a class="main-navigation-user-link" href="#">Сравнить</a>
+              <a class="main-navigation-user-link main-navigation-user-in" href="#">
+                Войти
+              </a>
             </li>
             <li class="main-navigation-user-item">
-              <span class="basket-set">2</span>
-              <a class="main-navigation-user-link" href="#">Корзина</a>
+              <a class="main-navigation-user-link main-navigation-user-out visually-hidden" href="#">
+                Выйти
+              </a>
             </li>
           </ul>
-          <div class="catalog-advantages-container">
-            <ul class="main-navigation-list">
-              <li class="main-navigation-item">
-                <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
-                <button class="main-navigation-button" type="button">
-                  +
-                </button>
-                <ul class="groups-products-list visually-hidden">
-                  <li class="groups-products-item">Виртуальная реальность</li>
-                  <li class="groups-products-item">Моноподы для селфи</li>
-                  <li class="groups-products-item">Экшн-камеры</li>
-                  <li class="groups-products-item">Фитнес-браслеты</li>
-                  <li class="groups-products-item">Умные часы</li>
-                  <li class="groups-products-item">Квадрокоптеры</li>
-                </ul>
-              </li>
+          <ul class="main-navigation-list-order">
+            <li class="main-navigation-order-item">
+              <a class="main-navigation-oder-link" href="#">Сравнить</a>
+            </li>
+            <li class="main-navigation-oder-item">
+              <span class="basket-set">2</span>
+              <a class="main-navigation-oder-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
+            <button class="main-navigation-button" type="button">
+              +
+            </button>
+            <ul class="groups-products-list visually-hidden">
+              <li class="groups-products-item">Виртуальная реальность</li>
+              <li class="groups-products-item">Моноподы для селфи</li>
+              <li class="groups-products-item">Экшн-камеры</li>
+              <li class="groups-products-item">Фитнес-браслеты</li>
+              <li class="groups-products-item">Умные часы</li>
+              <li class="groups-products-item">Квадрокоптеры</li>
             </ul>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+          </li>
+        </ul>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main-container main-index">
@@ -107,7 +107,7 @@
                     замаскированным под стандартную камеру.</p>
                   <a class="slider-link" href="#">Подробнее</a>
                   <dl class="slider-list">
-                    <dt class="slider-term">800 мм</dt>
+                    <dt class="slider-term">800 м</dt>
                     <dd class="slider-definition">Дальность полета</dd>
                     <dt class="slider-term">50 м</dt>
                     <dd class="slider-definition">Радиус поражения</dd>
@@ -147,7 +147,7 @@
                 <div class="slider-picture-container">
                   <button class="arrow arrow-back" type="button"><span class="visually-hidden">Назад</span></button>
                   <img class="slider-card" src="./images/long_selfiе_stick.png" width="560" height="560"
-                    alt="Длинная селфи-палка">
+                    alt="Длинная селфи-палка.">
                   <button class="arrow arrow-forward" type="button"><span class="visually-hidden">Вперёд</span></button>
                 </div>
                 <div class="slider-info-container">
@@ -158,7 +158,7 @@
                   <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                     Карл!) метров длиной и весом всего 5 кг.</p>
                   <a class="slider-link" href="#">Подробнее</a>
-                  <dl class="slider-list">
+                  <dl class="slider-list slider-list-selfi">
                     <dt class="slider-term">8,5 м</dt>
                     <dd class="slider-definition">Длина палки</dd>
                     <dt class="slider-term">5 кг</dt>
