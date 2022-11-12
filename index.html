@@ -36,8 +36,8 @@
                 Войти
               </a>
             </li>
-            <li class="main-navigation-user-item">
-              <a class="main-navigation-user-link main-navigation-user-out  visually-hidden" href="#">
+            <li class="main-navigation-user-item visually-hidden">
+              <a class="main-navigation-user-link main-navigation-user-out visually-hidden" href="#">
                 Выйти
               </a>
             </li>
@@ -54,8 +54,8 @@
             <li class="main-navigation-oder-item">
               <a class="main-navigation-order-link main-navigation-basket-link" href="#">
                 <span class="basket-set">2</span>
-                <svg class="main-navigation-icon main-navigation-basket-icon" aria-hidden="true" focusable="false"
-                  width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg class="main-navigation-basket-icon" aria-hidden="true" focusable="false" width="16" height="15"
+                  viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="m15.3 5.79-3.5.2-3.2-4.9c-.1-.2-.4-.3-.6-.3-.2 0-.5.1-.6.3l-3.2 4.9H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1l1.9-6.9v-.2c0-.4-.3-.8-.7-.8ZM8 2.69l2.2 3.2H5.9L8 2.69Z"
                     fill="#000" />
@@ -82,13 +82,13 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
+            <a class="navigation-link navigation-link-current" href="#">Доставка</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
+            <a class="navigation-link navigation-link-current" href="#">Гарантия</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
+            <a class="navigation-link navigation-link-current" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -275,10 +275,10 @@
                   <p class="suggestion-item-name">Доставка</p>
                 </a></li>
               <li class="suggestion-item">
-                <p class="suggestion-item-name">Гарантия</p>
+                <p class="suggestion-item-name suggestion-item-name-stripe">Гарантия</p>
               </li>
               <li class="suggestion-item">
-                <p class="suggestion-item-name">Кредит</p>
+                <p class="suggestion-item-name suggestion-item-name-stripe">Кредит</p>
               </li>
             </ul>
             <div class="delivery-container delivery-container-delivery">
@@ -347,11 +347,8 @@
               fill="#000" />
           </svg>
           <span class="order-info">Доставим редкий товар под заказ</span>
-          <span class="order-tooltip">
-            i
-          </span>
+          <span class="order-tooltip">i</span>
         </button>
-
         <div class="about-contacts-container">
           <section class="about-us">
             <h2 class="about-us-title">О нас</h2>
