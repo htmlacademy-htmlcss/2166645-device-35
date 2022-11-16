@@ -73,17 +73,19 @@
         </div>
         <ul class="main-navigation-list">
           <li class="main-navigation-item">
-            <a class="main-navigation-catalog-link" href="catalog.html">Каталог товаров</a>
-            <button class="main-navigation-button" type="button">
-              +
-            </button>
-            <ul class="groups-products-list visually-hidden">
-              <li class="groups-products-item">Виртуальная реальность</li>
-              <li class="groups-products-item">Моноподы для селфи</li>
-              <li class="groups-products-item">Экшн-камеры</li>
-              <li class="groups-products-item">Фитнес-браслеты</li>
-              <li class="groups-products-item">Умные часы</li>
-              <li class="groups-products-item">Квадрокоптеры</li>
+            <a class="main-navigation-catalog-link catalog-item" href="#">Каталог товаров
+              <button class="main-navigation-button" type="button">
+                +
+              </button></a>
+            <ul class="groups-products-list subcatalog-list">
+              <li class="groups-products-item catalog-item"><a class="subcatalog-item" href="#">Виртуальная
+                  реальность</a></li>
+              <li class="groups-products-item catalog-item"><a class="subcatalog-item" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="groups-products-item catalog-item"><a class="subcatalog-item" href="#">Экшн-камеры</a></li>
+              <li class="groups-products-item catalog-item"><a class="subcatalog-item" href="#">Фитнес-браслеты</a></li>
+              <li class="groups-products-item catalog-item"><a class="subcatalog-item" href="#">Умные часы</a></li>
+              <li class="groups-products-item catalog-item"><a class="subcatalog-item" href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
         </ul>
@@ -138,9 +140,34 @@
         <div class="catalog-products">
           <div class="filter-container">
             <p class="filter-products">Фильтр:</p>
-            <img class="line" src="#" alt="Линия">
-            <img class="line" src="#" alt="Линия">
+
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 119px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="5000" name="max-price" style="width: 35px">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
+
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Цвет</legend>
                 <ul class="catalog-filter-list">
@@ -389,4 +416,5 @@
       </div>
     </footer>
   </body>
+
 </html>
