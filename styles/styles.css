@@ -130,11 +130,10 @@ body {
   outline: 2px solid #AF4FFF;
 }
 
-/*выделить по квадратной рамке*/
 .search-disabled,
 .search-icon-disabled {
   opacity: 0.3;
-}
+}/*выделить по квадратной рамке*/
 
 .search-button {
   display: flex;
