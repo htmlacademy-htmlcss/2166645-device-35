@@ -23,10 +23,16 @@
         <section class="search-section">
           <h2 class="visually-hidden">Поиск</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <svg class="search-icon search-icon-disabled" aria-hidden="true" focusable="false" width="16" height="17"
+              viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m15.7 15-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
+                fill="#000" />
+            </svg>
             <label for="search"></label>
-            <input placeholder="Поиск по сайту" class="search" type="text" name="search" id="search">
+            <input placeholder="Поиск по сайту" class="search search-disabled" type="text" name="search" id="search">
             <button class="button search-button" type="button">
-              <span class="search-button">Найти</span>
+              <span class="search-button-text">Найти</span>
             </button>
           </form>
         </section>
@@ -74,9 +80,10 @@
         <ul class="main-navigation-list">
           <li class="main-navigation-item">
             <a class="main-navigation-catalog-link catalog-item" href="#">Каталог товаров
-              <button class="main-navigation-button" type="button">
-                +
-              </button></a>
+            </a>
+            <button class="main-navigation-button" type="button">
+              +
+            </button>
             <ul class="groups-products-list subcatalog-list">
               <li class="groups-products-item catalog-item"><a class="subcatalog-item" href="#">Виртуальная
                   реальность</a></li>
