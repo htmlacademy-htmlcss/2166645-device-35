@@ -16,10 +16,16 @@
         <section class="search-section">
           <h2 class="visually-hidden">Поиск</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <svg class="search-icon search-icon-disabled" aria-hidden="true" focusable="false" width="16" height="17"
+              viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m15.7 15-3.1-3.1c.9-1.2 1.4-2.6 1.4-4.2 0-3.9-3.1-7-7-7s-7 3.1-7 7 3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7.7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
+                fill="#000" />
+            </svg>
             <label for="search"></label>
-            <input placeholder="Поиск по сайту" class="search" type="text" name="search" id="search">
+            <input placeholder="Поиск по сайту" class="search search-disabled" type="text" name="search" id="search">
             <button class="button search-button" type="button">
-              <span class="search-button">Найти</span>
+              <span class="search-button-text">Найти</span>
             </button>
           </form>
         </section>
@@ -51,7 +57,7 @@
                 </svg>
                 Сравнить</a>
             </li>
-            <li class="main-navigation-oder-item">
+            <li class="main-navigation-oder-item main-navigation-oder-item-basket">
               <a class="main-navigation-order-link main-navigation-basket-link" href="#">
                 <span class="basket-set">2</span>
                 <svg class="main-navigation-basket-icon" aria-hidden="true" focusable="false" width="16" height="15"
@@ -61,22 +67,74 @@
                     fill="#000" />
                 </svg>
                 Корзина</a>
+              <!--Popover for cart-->
+              <div class="popover visually-hidden">
+                <div class="popover-content">
+                  <h2 class="popover-title visually-hidden">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <img class="cart-item-image" src="./images/icon_selfi_amateurish.jpg" width="39" height="43"
+                        alt="Любительская селфи-палка.">
+                      <p class="cart-item-title">Любительская <br>селфи-палка</p>
+                      <button type="button" class="cart-item-button button">
+                        <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
+                            fill="#fff" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <img class="cart-item-image" src="./images/icon_selfi_professional.jpg" width="39" height="43"
+                        alt="Профессиональная селфи-палка.">
+                      <p class="cart-item-title">Профессиональная селфи-палка</p>
+                      <button type="button" class="cart-item-button button">
+                        <svg aria-hidden="true" focusable="false" width="10" height="11" viewBox="0 0 10 11" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M10 1.08 9.1.17 5 4.26.9.16l-.9.92 4.1 4.09L0 9.26l.9.9L5 6.09l4.1 4.09.9-.91-4.1-4.1L10 1.09Z"
+                            fill="#fff" />
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="cart-amount-sum-container">
+                    <p class="cart-products">Товаров: <span>2</span></p>
+                    <p class="cart-sum">Сумма: <span>2000</span> ₽</p>
+                  </div>
+                  <button class="button-cart-open" type="button"><span class="button-cart-open-text">Открыть
+                      корзину</span></button>
+                </div>
+              </div>
+              <!-- end popover-->
             </li>
           </ul>
         </div>
-        <ul class="main-navigation-list">
+        <ul class="main-navigation-list catalog">
           <li class="main-navigation-item">
-            <a class="main-navigation-catalog-link" href="catalog.html">Каталог товаров</a>
+            <a class="main-navigation-catalog-link catalog-item" href="#">Каталог товаров
+            </a>
             <button class="main-navigation-button" type="button">
               +
             </button>
-            <ul class="groups-products-list visually-hidden">
-              <li class="groups-products-item">Виртуальная реальность</li>
-              <li class="groups-products-item">Моноподы для селфи</li>
-              <li class="groups-products-item">Экшн-камеры</li>
-              <li class="groups-products-item">Фитнес-браслеты</li>
-              <li class="groups-products-item">Умные часы</li>
-              <li class="groups-products-item">Квадрокоптеры</li>
+            <ul class="groups-products-list subcatalog-list">
+              <li class="groups-products-item catalog-item subcatalog-item"><a class="subcatalog-item"
+                  href="#">Виртуальная
+                  реальность</a></li>
+              <li class="groups-products-item catalog-item subcatalog-item"><a class="subcatalog-item" href="#">Моноподы
+                  для селфи</a>
+              </li>
+              <li class="groups-products-item catalog-item subcatalog-item"><a class="subcatalog-item"
+                  href="#">Экшн-камеры</a></li>
+              <li class="groups-products-item catalog-item subcatalog-item"><a class="subcatalog-item"
+                  href="#">Фитнес-браслеты</a></li>
+              <li class="groups-products-item catalog-item subcatalog-item"><a class="subcatalog-item" href="#">Умные
+                  часы</a></li>
+              <li class="groups-products-item catalog-item subcatalog-item"><a class="subcatalog-item"
+                  href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
         </ul>
@@ -131,10 +189,9 @@
                   </dl>
                 </div>
               </div>
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              </button>
             </li>
-            <li class="slider-pagination-item">
+            <!--Slider from the 2nd pages-->
+            <li class="slider-pagination-item visually-hidden">
               <div class="slider-container">
                 <div class="slider-picture-container">
                   <button class="arrow arrow-back" type="button"><span class="visually-hidden">Назад</span></button>
@@ -156,10 +213,8 @@
                   </dl>
                 </div>
               </div>
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              </button>
             </li>
-            <li class="slider-pagination-item">
+            <li class="slider-pagination-item visually-hidden">
               <div class="slider-container">
                 <div class="slider-picture-container">
                   <button class="arrow arrow-back" type="button"><span class="visually-hidden">Назад</span></button>
@@ -185,9 +240,20 @@
                   </dl>
                 </div>
               </div>
-              <button class="slider-pagination-button slider-pagination-button-current" type="button"></button>
             </li>
           </ol>
+          <ol class="slider-pagination-button-list">
+            <li class="slider-pagination-button-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              </button>
+            </li>
+            <li class="slider-pagination-button-item"><button
+                class="slider-pagination-button" type="button"></button></li>
+            <li class="slider-pagination-button-item"><button
+                class="slider-pagination-button" type="button">
+              </button></li>
+          </ol>
+          <!--end 2,3 slider pages-->
         </section>
         <section class="groups">
           <h2 class="visually-hidden">Группы товаров</h2>
@@ -265,7 +331,7 @@
             </li>
           </ul>
         </section>
-        <!-- Три блока Доставка Гарантия Кредит-->
+        <!--Blocks delivery-->
         <section class="suggestion-delivery">
           <div class="suggestion-delivery-container">
             <h2 class="visually-hidden">Предложения</h2>
@@ -297,54 +363,6 @@
             </div>
           </div>
         </section>
-<!--        <section class="suggestion-delivery">
-          <div class="suggestion-delivery-container">
-            <h2 class="visually-hidden">Предложения</h2>
-            <ul class="suggestion-list">
-              <li class="suggestion-item">
-                <p class="suggestion-item-name">Доставка</p>
-              </li>
-              <li class="suggestion-item  suggestion-item-checked"><a class="suggestion-item-link" href="#">
-                  <p class="suggestion-item-name">Гарантия</p>
-                </a>
-              </li>
-              <li class="suggestion-item">
-                <p class="suggestion-item-name">Кредит</p>
-              </li>
-            </ul>
-            <div class="delivery-container delivery-container-garanty">
-              <h2 class="delivery">Гарантия</h2>
-              <p class="delivery-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-                переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="suggestion-delivery">
-          <div class="suggestion-delivery-container">
-            <h2 class="visually-hidden">Предложения</h2>
-            <ul class="suggestion-list">
-              <li class="suggestion-item">
-                <p class="suggestion-item-name">Доставка</p>
-              </li>
-              <li class="suggestion-item">
-                <p class="suggestion-item-name">Гарантия</p>
-              </li>
-              <li class="suggestion-item  suggestion-item-checked">
-                <a class="suggestion-item-link" href="#">
-                  <p class="suggestion-item-name">Кредит</p>
-                </a>
-              </li>
-            </ul>
-            <div class="delivery-container delivery-container-credit">
-              <h2 class="delivery">Кредит</h2>
-              <p class="delivery-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
-                вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-            </div>
-          </div>
-        </section>-->
-
-
         <button class="order-button" type="button">
           <svg class="order-icon-truck" aria-hidden="true" focusable="false" width="47" height="31" viewBox="0 0 47 31"
             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -374,7 +392,6 @@
               <p class="about-us-link-text">Подробнее о нас</p>
             </a>
           </section>
-
           <section class="contacts">
             <h2 class="contacts-title">Контакты</h2>
             <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
@@ -401,7 +418,7 @@
               длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="newsletter-email"></label>
-              <input placeholder="Ваш e-mail" class="field-mail" type="email" name="newsletter-email"
+              <input placeholder="Ваш e-mail" class="field-mail-newsletter" type="email" name="newsletter-email"
                 id="newsletter-email" required>
               <button class="button newsletter-button" type="submit">
                 <span class="subscribe">Подписаться</span>
@@ -412,7 +429,7 @@
         </div>
       </div>
     </main>
-
+    <!--Footer-->
     <footer class="page-footer">
       <div class="page-footer-container">
         <section class="footer-address">
@@ -496,6 +513,70 @@
         </section>
       </div>
     </footer>
+    <!--Modal window-->
+    <div class="modal-container visually-hidden">
+      <div class="modal modal-auth">
+        <section class="modal-content">
+          <div class="modal-title-container">
+            <h2 class="modal-title">Доставка под заказ</h2>
+            <button class="modal-close-button">
+              <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26 2.36 23.64 0 13 10.64 2.36 0 0 2.36 10.64 13 0 23.64 2.36 26 13 15.36 23.64 26 26 23.64 15.36 13 26 2.36Z"
+                  fill="#000" />
+              </svg>
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+          </div>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group field-group-name">
+              <label class="form-label" for="appointment-name">
+                Ваше имя:
+              </label>
+              <input placeholder="Введите имя" class="field field-name" type="text" id="appointment-name"
+                name="appointment-name">
+              <span class="name-comment">Добавьте имя</span>
+            </p>
+            <p class="field-group field-group-mail">
+              <label class="form-label" for="order-email">Ваш e-mail:</label>
+              <input placeholder="Введите e-mail" class="field field-mail" type="email" name="order-email"
+                id="order-email" required>
+              <span class="email-comment">Забавный у вас адрес</span>
+            </p>
+            <p class="field-group field-group-order">
+              <label class="form-label" for="order-name">
+                Что нужно привезти:
+              </label>
+              <input placeholder="В свободной форме" class="field" type="text" id="order-name" name="order-name">
+            </p>
+            <div class="field-group field-group-quantity">
+              <label class="form-label" for="order-number">
+                Количество:
+              </label>
+              <div class="field-group-quantity-container">
+                <input placeholder="1" class="field field-number" type="number" id="order-number" name="order-number">
+                <button class="button-quantity button-minus" type="button">
+                  <span class="visually-hidden">Минус</span>
+                  <svg class="button-quantity-icon" aria-hidden="true" focusable="false" width="16" height="2"
+                    viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 0H0v2h16V0Z" fill="#000" />
+                  </svg>
+                </button>
+                <button class="button-quantity button-plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                  <svg class="button-quantity-icon" aria-hidden="true" focusable="false" width="16" height="16"
+                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a class="button button-send button-send-disabled" href="#">Отправить</a>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
