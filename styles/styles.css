@@ -36,12 +36,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 100%;
   font-family: Rubik, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   background-color: #ffffff;
+  overflow: scroll;
 }
 
 .visually-hidden {
@@ -58,7 +60,7 @@ body {
 /* header */
 .page-header {
   width: 1160px;
-  height: 300px;
+  min-height: 300px;
   margin: 40px auto 0 auto;
   background-color: #ffe17f;
 }
@@ -133,7 +135,9 @@ body {
 .search-disabled,
 .search-icon-disabled {
   opacity: 0.3;
-}/*выделить по квадратной рамке*/
+}
+
+/*выделить по квадратной рамке*/
 
 .search-button {
   display: flex;
@@ -485,6 +489,7 @@ top: -6px;*/
   display: block;
   padding: 0;
   margin: 0;
+  margin-top: 13px;
 }
 
 .main-navigation-catalog-link,
@@ -498,6 +503,39 @@ top: -6px;*/
   text-decoration: none;
   padding: 0;
   margin: 0;
+}
+
+.main-navigation-catalog-link {
+  width: 293px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-link-marker {
+  position: relative;
+  opacity: 0.3;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.catalog-link-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.main-navigation-catalog-link:hover .catalog-link-marker,
+.main-navigation-catalog-link:active .catalog-link-marker {
+  opacity: 1;
+}
+
+.main-navigation-catalog-link:focus-within {
+  outline: 2px solid #AF4FFF;
 }
 
 .catalog-item:last-child {
@@ -553,8 +591,16 @@ top: -6px;*/
   text-decoration: none;
 }
 
-.navigation-link-current {
-  border-bottom: 2px solid #000000;
+.subcatalog-link:hover {
+  opacity: 0.6;
+}
+
+.subcatalog-link:active {
+  opacity: 0.3;
+}
+
+.subcatalog-link:focus-visible {
+  outline: 2px solid #AF4FFF;
 }
 
 .navigation-link:hover,
@@ -572,14 +618,14 @@ top: -6px;*/
   outline: 2px solid #AF4FFF;
 }
 
+.navigation-link-current {
+  border-bottom: 2px solid #000000;
+}
+
 /* Main*/
 .main-container {
   flex-grow: 1;
-}
-
-.page-container {
-  width: 1440px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .slider-title,
@@ -593,6 +639,8 @@ top: -6px;*/
 /*Slider in index*/
 .base-gallery {
   position: relative;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .slider-description {
@@ -919,9 +967,10 @@ top: -6px;*/
 /*Delivery block*/
 .suggestion-delivery {
   display: flex;
-  width: 1440px;
-  height: 289px;
-  margin: 0 auto;
+  width: 100%;
+  /* width: 1440px;*/
+  min-height: 289px;
+  /*margin: 0 auto;*/
   margin-bottom: 70px;
   background-color: #F0F0F0;
   /*растянуть на всю длину*/
@@ -1130,16 +1179,36 @@ top: -6px;*/
   z-index: 1;
 }
 
-.order-tooltip {
-  display: block;
+.order-tooltip-container {
+  display: flex;
   width: 125px;
-  height: 100px;
-  /*выровнять*/
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-tooltip {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
+
+}
+
+.order-tooltip-icon {
+  opacity: 0.3;
 }
 
 .order-button:hover .order-info::before {
   background-color: #FFC700;
 }
+
+.order-button:hover .order-tooltip-icon {
+  opacity: 1;
+  }
 
 .order-button:active {
   opacity: 0.3;
@@ -1367,7 +1436,7 @@ top: -6px;*/
 /*News*/
 .newsletter-container {
   background-color: #F0F0F0;
-  /* width: 100vw;*/
+  width: 100%;
   /*растянуть на всю длину и слева и справа*/
 }
 
@@ -1376,8 +1445,8 @@ top: -6px;*/
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1440px;
-  height: 421px;
-  margin: 0;
+  min-height: 421px;
+  margin: 0 auto;
   padding-left: 140px;
   padding-right: 140px;
   padding-bottom: 56px;
@@ -1487,7 +1556,8 @@ top: -6px;*/
 /*footer*/
 .page-footer {
   background-color: #444444;
-  height: 321px;
+  min-height: 321px;
+  width: 100%;
 }
 
 .page-footer-container {
@@ -1700,6 +1770,10 @@ top: -6px;*/
   background-color: rgba(240, 240, 240, 0.9);
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1854,6 +1928,12 @@ top: -6px;*/
   appearance: textfield;
   border: none;
 }
+
+.field-number::-webkit-inner-spin-button,
+.field-number::-webkit-outer-spin-button {
+  display: none;
+}
+
 
 .button-quantity {
   display: block;
